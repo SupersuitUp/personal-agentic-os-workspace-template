@@ -7,7 +7,7 @@ description: Weekly audit of what the owner actually worked on this week, reflec
 
 A weekly reflection skill. Pull what the owner actually worked on in the last 7 days and ask the one question that matters: **was this the real work, or was a lot of it high-leverage avoidance?**
 
-This operationalizes the Unlock Question as a weekly discipline.
+This operationalizes [The Unlock Question](https://supersuit.wiki/concepts/the-unlock-question) as a weekly discipline.
 
 ## Pre-check
 

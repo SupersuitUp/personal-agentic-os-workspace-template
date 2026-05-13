@@ -2,6 +2,8 @@
 
 Your personal AI-operated business OS. Spin up your own private copy from this template, open it, and start talking. By the end of your first session, you will have an AI system that knows who you are and a plan for the thing that matters most to you right now.
 
+For the full conceptual framing, the multi-page Supersuit Up Workshop, tool-setup guides, and use cases, see **[supersuit.wiki](https://supersuit.wiki)**.
+
 ## What This Is
 
 A structured workspace of plain markdown files that gives you AI-augmented recall, strategic clarity, and compounding context. Your AI agent (Claude Code, Hermes, Codex, or any harness) reads these files and operates from them. Every conversation makes the system smarter.
@@ -116,7 +118,7 @@ Claude Code auto-discovers every skill in `.agents/skills/` as a slash command. 
 |-------|---------------|--------------|-----------------|
 | **onboard** | `/onboard` | Full first-session setup: import AI history, build profile, strategic interview | Runs automatically if no `user/USER.md` exists |
 | **create-user-profile** | `/create-user-profile` | Interview to build or update your profile | "Create my profile" or "Update my profile" |
-| **get-unlocked** | `/get-unlocked` | Strategic interview on whatever would unlock your next level (operationalizes the Unlock Question) | "Get unlocked" / "Help me think through something" / "I'm stuck" |
+| **get-unlocked** | `/get-unlocked` | Strategic interview on whatever would unlock your next level (operationalizes [The Unlock Question](https://supersuit.wiki/concepts/the-unlock-question)) | "Get unlocked" / "Help me think through something" / "I'm stuck" |
 | **audit-my-week** | `/audit-my-week` | Pull the last 7 days of git activity, artifacts, and transcripts; reflect against stated priorities; save a weekly retrospective | "Audit my week" / "Weekly review" / "What did I ship" |
 | **process-braindump** | `/process-braindump` | Route a brain dump to the correct files | Paste any unstructured text or voice transcript |
 | **prep-for-meeting** | `/prep-for-meeting` | Meeting prep brief from your relationship files | "Prep me for my meeting with Sarah" |
@@ -186,6 +188,16 @@ This workspace works with any AI harness that can read files:
 - **Cursor, OpenCode, Aider** (point them at the workspace)
 
 The `CLAUDE.md` file points to `AGENTS.md`, which contains the full operating instructions. Any harness that reads either file gets the same behavior.
+
+## Full Tutorial
+
+For the complete walkthrough with installation help, conceptual framing, and exercises:
+
+**[The Supersuit Up Workshop](https://supersuit.wiki/paos/supersuit-up-workshop)** on supersuit.wiki.
+
+## Reference
+
+- **[supersuit.wiki](https://supersuit.wiki)**: canonical concepts, use cases, tool setups, playbooks, the full workshop, and the glossary
 
 ## Contributing
 
