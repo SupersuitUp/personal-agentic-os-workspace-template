@@ -1,4 +1,4 @@
-# Jarvis Workspace Template
+# Personal Agentic OS Workspace Template
 
 Your personal AI-operated business OS. Spin up your own private copy from this template, open it, and start talking. By the end of your first session, you will have an AI system that knows who you are and a plan for the thing that matters most to you right now.
 
@@ -22,7 +22,7 @@ This is not a chatbot. This is a persistent memory system that compounds over ti
 2. Sign in to GitHub from the CLI: `gh auth login`. Follow the prompts (choose HTTPS and authenticate via browser for the smoothest path).
 3. Create a `github-repos` folder in your home directory to keep all your repos in one predictable place: `mkdir -p ~/github-repos && cd ~/github-repos`
 4. Get your own private copy. This repo is a **GitHub template**, so creating yours is one click:
-   - Visit [github.com/garysheng/jarvis-workspace-template](https://github.com/garysheng/jarvis-workspace-template)
+   - Visit [github.com/SupersuitUp/personal-agentic-os-workspace-template](https://github.com/SupersuitUp/personal-agentic-os-workspace-template)
    - Click **"Use this template"** → **"Create a new repository"**
    - Name it `my-jarvis` (or whatever you prefer), set visibility to **Private**, click Create
    - Clone your new private repo locally:
@@ -36,7 +36,7 @@ This is not a chatbot. This is a persistent memory system that compounds over ti
 7. Your Jarvis will walk you through the rest. On your first session, it runs the **onboard** skill automatically: imports your existing AI history, builds your profile, and interviews you about your most important blocker.
 8. Turn on hourly auto-sync so your work is backed up to GitHub: `bash scripts/install-sync-cron.sh`
 
-> **Pulling future updates from the template:** The template gets better over time (new skills, updated scripts). When you want the latest, run `/sync-with-upstream` in Claude Code (or just tell your harness *"sync with upstream"*). It will pull the new goodies from `garysheng/jarvis-workspace-template` without touching your personal files. See the [sync-with-upstream](.agents/skills/sync-with-upstream/SKILL.md) skill for details. You cannot accidentally push to the upstream template: you are not a collaborator on that repo, and the skill configures your local remote with a disabled push URL as a second safety net.
+> **Pulling future updates from the template:** The template gets better over time (new skills, updated scripts). When you want the latest, run `/sync-with-upstream` in Claude Code (or just tell your harness *"sync with upstream"*). It will pull the new goodies from `SupersuitUp/personal-agentic-os-workspace-template` without touching your personal files. See the [sync-with-upstream](.agents/skills/sync-with-upstream/SKILL.md) skill for details. You cannot accidentally push to the upstream template: you are not a collaborator on that repo, and the skill configures your local remote with a disabled push URL as a second safety net.
 
 ## Folder Structure
 

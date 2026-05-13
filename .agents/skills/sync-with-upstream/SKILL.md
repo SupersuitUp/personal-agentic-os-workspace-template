@@ -1,11 +1,11 @@
 ---
 name: sync-with-upstream
-description: Pull the latest updates from the upstream Jarvis Workspace Template (new skills, updated scripts, refreshed README) into this workspace without disturbing any of the owner's personal files. Use when the owner says "sync with upstream", "pull template updates", "get the latest from the template", or any similar phrasing.
+description: Pull the latest updates from the upstream Personal Agentic OS Workspace Template (new skills, updated scripts, refreshed README) into this workspace without disturbing any of the owner's personal files. Use when the owner says "sync with upstream", "pull template updates", "get the latest from the template", or any similar phrasing.
 ---
 
 # Sync With Upstream
 
-Pull updates from the upstream `garysheng/jarvis-workspace-template` template into this workspace. Leave the owner's personal files untouched.
+Pull updates from the upstream `SupersuitUp/personal-agentic-os-workspace-template` template into this workspace. Leave the owner's personal files untouched.
 
 ## What Upstream Owns (Safe To Update)
 
@@ -40,7 +40,7 @@ git remote -v
 If `upstream` is not listed, add it now with a disabled push URL (this prevents any accidental `git push upstream` from ever touching the template):
 
 ```bash
-git remote add upstream https://github.com/garysheng/jarvis-workspace-template.git
+git remote add upstream https://github.com/SupersuitUp/personal-agentic-os-workspace-template.git
 git remote set-url --push upstream DISABLED
 ```
 
@@ -50,7 +50,7 @@ Confirm the push URL shows as `DISABLED`:
 git remote -v
 # origin   https://github.com/OWNER/my-jarvis.git (fetch)
 # origin   https://github.com/OWNER/my-jarvis.git (push)
-# upstream https://github.com/garysheng/jarvis-workspace-template.git (fetch)
+# upstream https://github.com/SupersuitUp/personal-agentic-os-workspace-template.git (fetch)
 # upstream DISABLED (push)
 ```
 
