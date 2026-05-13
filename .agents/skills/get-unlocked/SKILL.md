@@ -7,7 +7,7 @@ description: Interview the user about the thing that, if they addressed it, woul
 
 Interview the user about the thing that, if they addressed it, would unlock their next level. Push for specificity. Catch avoidance. Produce an actionable plan.
 
-This skill operationalizes [The Unlock Question](https://supersuit.wiki/concepts/the-unlock-question): the lead question every leader of agents and humans should ask themselves.
+This skill operationalizes the Unlock Question: the lead question every leader of agents and humans should ask themselves.
 
 ## Pre-check
 
@@ -25,7 +25,7 @@ This is not a survey. It is a strategic thinking session. Ask questions **one at
 
 Ask: **"What is the thing that, if you addressed it, would unlock your next level?"**
 
-(This is *the unlock question*. Keep this exact phrasing. See the concept doc [The Unlock Question](https://supersuit.wiki/concepts/the-unlock-question) for the framing, drawn from Regina Gerbeaux's [Force Multipliers](https://force-multipliers.beehiiv.com).)
+(This is *the unlock question*. Keep this exact phrasing. The framing is drawn from Regina Gerbeaux's [Force Multipliers](https://force-multipliers.beehiiv.com).)
 
 If they give you something vague ("I need to grow my business"), push: **"Be more specific. What exactly about growing your business? What decision are you trying to make? What is the actual fork in the road?"**
 
