@@ -62,6 +62,7 @@ my-jarvis/
 │       ├── create-user-profile/ # Build or update your user profile
 │       ├── get-unlocked/        # Interview on your most important blocker (The Unlock Question)
 │       ├── audit-my-week/       # Weekly reflection: real work vs high-leverage avoidance
+│       ├── decongest/           # Extract a single stuck thought from your head into an artifact
 │       ├── process-braindump/   # Route unstructured input to the right files
 │       ├── prep-for-meeting/    # Generate meeting prep briefs
 │       ├── process-transcript/  # Extract insights from meeting transcripts
@@ -120,6 +121,7 @@ Claude Code auto-discovers every skill in `.agents/skills/` as a slash command. 
 | **create-user-profile** | `/create-user-profile` | Interview to build or update your profile | "Create my profile" or "Update my profile" |
 | **get-unlocked** | `/get-unlocked` | Strategic interview on whatever would unlock your next level (operationalizes [The Unlock Question](https://supersuit.wiki/concepts/the-unlock-question)) | "Get unlocked" / "Help me think through something" / "I'm stuck" |
 | **audit-my-week** | `/audit-my-week` | Pull the last 7 days of git activity, artifacts, and transcripts; reflect against stated priorities; save a weekly retrospective | "Audit my week" / "Weekly review" / "What did I ship" |
+| **decongest** | `/decongest` | Extract a single stuck thought, conviction, or sermon idea from your head and turn it into a clean artifact | "Decongest" / "I have something in my head" / "Help me get this out" |
 | **process-braindump** | `/process-braindump` | Route a brain dump to the correct files | Paste any unstructured text or voice transcript |
 | **prep-for-meeting** | `/prep-for-meeting` | Meeting prep brief from your relationship files | "Prep me for my meeting with Sarah" |
 | **process-transcript** | `/process-transcript` | Extract everything from a meeting transcript | "Process this transcript" or paste a transcript |
