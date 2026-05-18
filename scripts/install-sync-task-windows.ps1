@@ -1,4 +1,4 @@
-# Install an hourly Scheduled Task that syncs this Jarvis workspace to GitHub.
+# Install an hourly Scheduled Task that syncs this workspace to GitHub.
 # Windows equivalent of install-sync-cron.sh.
 # Idempotent: running again replaces any existing task for this workspace.
 #
@@ -35,7 +35,11 @@ Install via: winget install Git.Git
 }
 
 $WorkspaceName = Split-Path -Leaf $RepoDir
-$TaskName = "JarvisSync-$WorkspaceName"
+$TaskName    = "WorkspaceSync-$WorkspaceName"
+$LegacyName  = "JarvisSync-$WorkspaceName"
+
+# Migration: remove any legacy JarvisSync task installed by an earlier template version.
+Unregister-ScheduledTask -TaskName $LegacyName -Confirm:$false -ErrorAction SilentlyContinue | Out-Null
 
 $Action = New-ScheduledTaskAction `
   -Execute $BashExe `
@@ -66,12 +70,12 @@ Register-ScheduledTask `
   -Trigger $Trigger `
   -Settings $Settings `
   -Principal $Principal `
-  -Description "Hourly sync for Jarvis workspace at $RepoDir" | Out-Null
+  -Description "Hourly sync for workspace at $RepoDir" | Out-Null
 
 Write-Host "Installed hourly sync task '$TaskName' for $RepoDir"
 Write-Host ""
 Write-Host "Verify:   Get-ScheduledTask -TaskName '$TaskName'"
 Write-Host "Run now:  Start-ScheduledTask -TaskName '$TaskName'"
-Write-Host "Logs:     $RepoDir\.jarvis-sync.log"
+Write-Host "Logs:     $RepoDir\.workspace-sync.log"
 Write-Host ""
 Write-Host "To remove later: powershell -ExecutionPolicy Bypass -File .\scripts\uninstall-sync-task-windows.ps1"

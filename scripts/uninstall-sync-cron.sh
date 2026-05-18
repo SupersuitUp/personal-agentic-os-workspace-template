@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Remove the hourly sync cron entry for this Jarvis workspace.
+# Remove the hourly sync cron entry for this workspace.
 # Mac / Linux companion to install-sync-cron.sh.
 
 set -euo pipefail

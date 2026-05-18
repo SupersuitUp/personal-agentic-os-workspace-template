@@ -152,7 +152,7 @@ Claude Code auto-discovers every skill in `.agents/skills/` as a slash command. 
 
 ## Keeping Your Workspace Synced
 
-Once you push your workspace to GitHub, you want it to stay synced automatically so nothing is ever lost and any machine (or collaborator you invite) is up to date. The starter repo ships a `scripts/sync.sh` that commits anything new, rebases against the remote, and pushes, plus one-command installers to run it hourly on whatever OS you are on. Output is appended to `.jarvis-sync.log` (git-ignored).
+Once you push your workspace to GitHub, you want it to stay synced automatically so nothing is ever lost and any machine (or collaborator you invite) is up to date. The starter repo ships a `scripts/sync.sh` that commits anything new, rebases against the remote, and pushes, plus one-command installers to run it hourly on whatever OS you are on. Output is appended to `.workspace-sync.log` (git-ignored).
 
 **Mac / Linux:**
 
@@ -176,7 +176,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\install-sync-task-windows.ps1
 powershell -ExecutionPolicy Bypass -File .\scripts\uninstall-sync-task-windows.ps1
 ```
 
-Registers a Task Scheduler task named `JarvisSync-<your-workspace>` that runs `scripts/sync.sh` via Git Bash every hour. Requires Git for Windows (which ships `bash.exe`).
+Registers a Task Scheduler task named `WorkspaceSync-<your-workspace>` that runs `scripts/sync.sh` via Git Bash every hour. Requires Git for Windows (which ships `bash.exe`). If you previously installed an earlier version of this template, the installer also removes any legacy `JarvisSync-<your-workspace>` task so you do not end up with both.
 
 Prerequisites for either OS: `gh auth login` must be complete so pushes work without prompting.
 

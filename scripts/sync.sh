@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# Sync this Jarvis workspace with its GitHub remote.
+# Sync this workspace with its GitHub remote.
 # Pulls remote changes, commits anything local, pushes back up.
-# Safe to run on a cron. Writes output to .jarvis-sync.log.
+# Safe to run on a cron. Writes output to .workspace-sync.log.
 
 set -uo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_DIR"
 
-LOG="$REPO_DIR/.jarvis-sync.log"
+LOG="$REPO_DIR/.workspace-sync.log"
 BRANCH="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo main)"
 
 {
@@ -29,7 +29,7 @@ BRANCH="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo main)"
 
   if ! git diff --quiet || ! git diff --cached --quiet || [[ -n "$(git ls-files --others --exclude-standard)" ]]; then
     git add -A
-    git commit -m "jarvis sync: $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+    git commit -m "workspace sync: $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
   fi
 
   if ! git pull --rebase --autostash origin "$BRANCH"; then

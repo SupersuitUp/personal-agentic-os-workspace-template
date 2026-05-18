@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install an hourly cron job that syncs this Jarvis workspace to GitHub.
+# Install an hourly cron job that syncs this workspace to GitHub.
 # Idempotent: running again replaces the existing entry for this workspace.
 
 set -euo pipefail
@@ -25,6 +25,11 @@ rm "$TMP"
 echo "Installed hourly sync cron for $REPO_DIR"
 echo ""
 echo "Verify with: crontab -l"
-echo "Logs will accumulate in: $REPO_DIR/.jarvis-sync.log"
+echo "Logs will accumulate in: $REPO_DIR/.workspace-sync.log"
+if [[ -f "$REPO_DIR/.jarvis-sync.log" ]]; then
+  echo ""
+  echo "Note: an older $REPO_DIR/.jarvis-sync.log exists from a previous install."
+  echo "      Future logs go to .workspace-sync.log; you can delete the old file safely."
+fi
 echo ""
 echo "To remove later: crontab -l | grep -vF '$SYNC_SCRIPT' | crontab -"

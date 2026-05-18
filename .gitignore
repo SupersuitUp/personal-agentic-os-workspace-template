@@ -12,4 +12,5 @@ Thumbs.db
 .idea/
 
 # Sync cron log
+.workspace-sync.log
 .jarvis-sync.log
